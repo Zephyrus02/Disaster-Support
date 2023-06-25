@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Guide | IDR</title>
+  </head>
+  <body>
+    <div class="register">
+      <nav class="nav1">
+        <h2>IMPROVED DISASTER RESPONSE WITH REAL TIME LOCATION MONITORING</h2>
+      </nav>
+      <header>
+        <img class="logo" src="static/logo.png" alt="logo" />
+        <nav>
+          <ul class="nav2">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/involve">Get involved</a></li>
+          </ul>
+        </nav>
+        <a class="btn" href="/donate"><button>Donate Now</button></a>
+      </header>
+    </div>
+    <hr>
+    <h1>Your Alert has been raised to the nearest resource provider.
+      Support crew with the required items will be arriving shortly.</h1>
+    <div class="table">
+      <table>
+        <tr>
+          <th>Calamity</th>
+          <th>Required Food & Water</th>
+          <th>Required Medicine</th>
+          <th>Note</th>
+        </tr>
+        <tr>
+          <td>{{ Calamity }}</td>
+          <td>{{ FW }}</td>
+          <td>{{ Med }}</td>
+          <td>{{ Note }}</td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>Kindly refer to these articles and follow until the support crew arrives for aid. Kindly cooperate with the support crew as they are there to help you.</h2>
+    <h2>Link 1 :<a href="">Article Title</a></h2>
+    <h2>Link 2 :<a href="">Article Title</a></h2>
+    <h2>Link 3 :<a href="">Article Title</a></h2>
+
+    <footer class="ftrs" >
+      <div  >
+      <p>
+          Model created for GCCP Project | <a href="mailto: aneeshraskar@gmail.com">Reach us by mail</a>
+      </p>
+      <p>Copyright &copy; All rights reserved.</p>
+      </div>
+  </footer>
+  </body>
+</html>

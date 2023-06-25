@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home | IDR</title>
+  </head>
+  <body>
+    <div class="register">
+      <nav class="nav1">
+        <h2>IMPROVED DISASTER RESPONSE WITH REAL TIME LOCATION MONITORING</h2>
+      </nav>
+      <header>
+        <img class="logo" src="static/logo.png" alt="logo" />
+        <nav>
+          <ul class="nav2">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/involve">Get involved</a></li>
+          </ul>
+        </nav>
+        <a class="btn" href="/donate"><button>Donate Now</button></a>
+      </header>
+    </div>
+    <hr />
+    <div class="everything">
+      <form class="frm" name="sos" id="sos" action="/guide" method="POST">
+        <table class="tab1">
+          <tr>
+            <td>Cause of Distress:</td>
+            <td>
+              <select class="cause" name="disaster" required>
+                <option></option>
+                <option>Floods</option>
+                <option>Earthquake</option>
+                <option>Plague</option>
+                <option>Covid-19</option>
+                <option>Others</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <h1 class="specify">Specify Resources:</h1>
+        <table>
+          <tr>
+            <td>Food and Water:</td>
+            <td><input class="inpt1" type="number" name="FW" required /></td>
+          </tr>
+          <tr>
+            <td>Medicine Units:</td>
+            <td><input class="inpt2" type="number" name="Med" required /></td>
+          </tr>
+          <tr>
+            <td>Add a personal note:</td>
+            <td>
+              <textarea
+                class="note"
+                name="note"
+                cols="25"
+                rows="5"
+                placeholder="Important note (if any)"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+        <input class="btn8" type="image" src="https://cdn-icons-png.flaticon.com/512/1403/1403474.png" height="100px"/>
+      </form>
+    </div>
+    <footer class="ftrs" >
+      <div  >
+      <p>
+          Model created for GCCP Project | <a href="mailto: aneeshraskar@gmail.com">Reach us by mail</a>
+      </p>
+      <p>Copyright &copy; All rights reserved.</p>
+      </div>
+  </footer>
+  </body>
+</html>
